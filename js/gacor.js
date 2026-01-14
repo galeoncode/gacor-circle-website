@@ -65,8 +65,8 @@ const members = [
     photo: "img/Hizkiya.jpeg"
   },
    {
-    name: "Alvian ",
-    nick: "Alvian",
+    name: "Alfian Mangerongkonda",
+    nick: "Alfian",
     ig: "",
     photo: "img/Alvian.jpeg"
   },
@@ -89,119 +89,48 @@ const members = [
     photo: "img/Paniton.jpeg"
   },
   {
-    name: "",
-    nick: "",
+    name: "Afgan Abdula",
+    nick: "Afgan",
     ig: "",
-    photo: ""
+    photo: "img/Afgan.jpeg"
   },
    {
-    name: "",
-    nick: "",
+    name: "Rafael Tahulending",
+    nick: "Pael",
     ig: "",
-    photo: ""
+    photo: "img/Rafael.jpeg"
   },
    {
-    name: "",
-    nick: "",
-    ig: "",
-    photo: ""
+    name: "Giorgio Kuera",
+    nick: "dede Gio",
+    ig: "@kueragiorgio",
+    photo: "img/giorgio.jpeg"
   },
   {
-    name: "",
-    nick: "",
+    name: "Fino Kuada",
+    nick: "Fino",
     ig: "",
-    photo: ""
+    photo: "img/Fino.jpeg"
   },
    {
-    name: "",
-    nick: "",
+    name: "Alvin Tambajong",
+    nick: "Alvin",
     ig: "",
-    photo: ""
+    photo: "img/Alvin.jpeg"
   },
    {
-    name: "",
-    nick: "",
+    name: "Adrian Sidamo",
+    nick: "Adrian",
     ig: "",
-    photo: ""
+    photo: "img/drian.jpeg"
   },
   {
-    name: "",
-    nick: "",
+    name: "Glory Budiman",
+    nick: "Johan",
     ig: "",
-    photo: ""
+    photo: "img/budiman.jpeg"
   },
-   {
-    name: "",
-    nick: "",
-    ig: "",
-    photo: ""
-  },
-   {
-    name: "",
-    nick: "",
-    ig: "",
-    photo: ""
-  },
-  {
-    name: "",
-    nick: "",
-    ig: "",
-    photo: ""
-  },
-   {
-    name: "",
-    nick: "",
-    ig: "",
-    photo: ""
-  },
-   {
-    name: "",
-    nick: "",
-    ig: "",
-    photo: ""
-  },
-  {
-    name: "",
-    nick: "",
-    ig: "",
-    photo: ""
-  },
-   {
-    name: "",
-    nick: "",
-    ig: "",
-    photo: ""
-  },
-   {
-    name: "",
-    nick: "",
-    ig: "",
-    photo: ""
-  },
-  {
-    name: "",
-    nick: "",
-    ig: "",
-    photo: ""
-  },
-   {
-    name: "",
-    nick: "",
-    ig: "",
-    photo: ""
-  },
-   {
-    name: "",
-    nick: "",
-    ig: "",
-    photo: ""
-  },
-  {
-    name: "",
-    nick: "",
-    ig: "",
-    photo: ""
-  },
+  
 ];
 members.forEach(member => {
   memberContainer.innerHTML += `
@@ -234,6 +163,28 @@ const memories = [
   "img/memory15.jpeg",
   "img/memory16.jpeg",
   "img/memory17.jpeg",
+  "img/memory18.jpeg",
+  "img/memory19.jpeg",
+  "img/memory20.jpeg",
+  "img/memory21.jpeg",
+  "img/memory22.jpeg",
+  "img/memory23.jpeg",
+  "img/memory24.jpeg",
+  "img/memory25.jpeg",
+  "img/memory26.jpeg",
+  "img/memory27.jpeg",
+  "img/memory28.jpeg",
+  "img/memory29.jpeg",
+  "img/memory30.jpeg",
+  "img/memory31.jpeg",
+  "img/memory32.jpeg",
+  "img/memory33.jpeg",
+  "img/memory34.jpeg",
+  "img/memory35.jpeg",
+  "img/memory36.jpeg",
+  "img/memory37.jpeg",
+  "img/memory38.jpeg",
+
 ];
 
 const gallery = document.getElementById("memoryGallery");
