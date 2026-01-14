@@ -128,3 +128,46 @@ footer{text-align:center;padding:30px;opacity:.4}
   nav.open .nav-links{display:flex}
   .nav-links a{padding:10px 12px;margin:0;white-space:nowrap}
 }
+
+/* === Lightweight Animations (safe, non-invasive) 🔧 === */
+:root{
+  --anim-duration: 0.40s;
+  --anim-ease: cubic-bezier(.2,.8,.2,1);
+  --anim-shadow: 0 10px 30px rgba(2,6,23,0.45);
+}
+
+/* Global smooth transitions for interactive elements */
+button, .card, .nav-links a, .gallery img, .memorial-card, .cards .card, .logo, .hero h1 {
+  transition: transform var(--anim-duration) var(--anim-ease), box-shadow var(--anim-duration) var(--anim-ease), opacity var(--anim-duration) var(--anim-ease);
+  will-change: transform, opacity;
+}
+
+/* Hover / focus effect (subtle scale + shadow) */
+button:hover, button:focus, .card:hover, .card:focus-within, .nav-links a:hover, .nav-links a:focus-visible, .gallery img:hover, .logo:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.28);
+}
+
+/* Scroll reveal: fade in + slide up */
+.gc-anim-is-hidden {
+  opacity: 0;
+  transform: translateY(14px);
+  pointer-events: auto;
+}
+
+.gc-anim-in-view {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity var(--anim-duration) var(--anim-ease), transform var(--anim-duration) var(--anim-ease);
+}
+
+/* Reduced motion users: no animations */
+@media (prefers-reduced-motion: reduce) {
+  :root { --anim-duration: 0s; }
+  .gc-anim-is-hidden { opacity: 1 !important; transform: none !important; transition: none !important; }
+  button, .card, .nav-links a, .gallery img { transition: none !important; }
+}
+
+/* Accessibility refinements */
+.card:focus-within, .nav-links a:focus-visible, button:focus-visible { box-shadow: 0 6px 18px rgba(0,0,0,0.22); transform: translateY(-2px) scale(1.005); }
+
