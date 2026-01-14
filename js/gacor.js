@@ -128,7 +128,7 @@ const members = [
     name: "Glory Budiman",
     nick: "Johan",
     ig: "",
-    photo: "img/budiman.jpeg"
+    photo: "img/Budiman.jpeg"
   },
   
 ];
