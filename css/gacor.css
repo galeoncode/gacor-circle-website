@@ -1,0 +1,130 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0b0b0b;color:#eaeaea}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;height:auto;display:block} 
+
+.Tulisan{
+    text-align: center;
+}
+
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:rgba(0,0,0,.6);
+  backdrop-filter:blur(10px);
+  padding:12px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:100;
+}
+nav .brand{font-weight:800;letter-spacing:2px}
+nav .menu-toggle{
+  display:none;
+  background:transparent;
+  border:0;
+  color:inherit;
+  font-size:24px;
+  cursor:pointer;
+  padding:8px;
+}
+.nav-links{
+  display:flex;
+  gap:20px;
+  align-items:center;
+}
+.nav-links a{font-size:14px;opacity:.95;padding:8px 10px;border-radius:8px;transition:background .18s,transform .12s}
+.nav-links a:hover{background:rgba(255,255,255,0.03);transform:translateY(-2px)}
+.nav-links a:focus-visible{outline:2px solid rgba(255,255,255,0.12);outline-offset:3px;border-radius:6px}
+.menu-toggle:focus-visible{outline:2px solid rgba(255,255,255,0.12);outline-offset:3px;border-radius:6px}
+
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url('../img/sampul.jpeg') center/cover;
+display:flex;justify-content:center;align-items:center;text-align:center
+}
+.logo{width:150px;max-width:35vw;margin:0 auto 20px;display:block;height:auto}
+.hero-content{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}
+.hero h1{font-size:clamp(32px,6vw,64px);letter-spacing:6px;line-height:1}
+.hero{min-height:70vh} 
+
+section{padding:110px 8%}
+h2{font-size:36px}
+.sub{opacity:.6;margin:15px 0 40px}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:25px;
+} 
+.card{
+background:#121212;border-radius:14px;padding:15px;text-align:center
+}
+.card img{width:100%;border-radius:10px}
+.nickname{font-size:13px;opacity:.6}
+
+.memory{background:#0e0e0e}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px
+}
+.gallery img{
+width:100%;
+border-radius:14px;
+filter:grayscale(20%);
+transition:.3s
+}
+.gallery img:hover{filter:none;transform:scale(1.04)}
+
+.rules li{margin-bottom:12px}
+
+.remembrance{
+background:#050505;
+border-top:2px solid #1c1c1c;
+text-align:center
+}
+.memorial-card{
+max-width:900px;
+margin:auto;
+display:flex;
+gap:40px;
+align-items:center;
+background:#0f0f0f;
+padding:40px;
+border-radius:24px
+}
+.memorial-card img{
+  width:100%;
+  max-width:280px;
+  border-radius:20px;
+  filter:grayscale(100%);
+  height:auto;
+} 
+
+footer{text-align:center;padding:30px;opacity:.4}
+
+@media (max-width:768px){
+  .hero{
+    min-height:70vh;
+    padding:40px 20px;
+    background-position:center top;
+  }
+  .hero h1{font-size:42px}
+  .logo{width:110px}
+  .memorial-card{flex-direction:column;padding:24px;gap:20px}
+  .memorial-card img{width:100%;max-width:280px;height:auto}
+  section{padding:80px 6%}
+  .cards{grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:18px}
+  .gallery{grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+  /* Navigation responsive */
+  nav{padding:10px 20px}
+  nav .menu-toggle{display:block}
+  .nav-links{display:none;position:absolute;top:60px;right:20px;background:rgba(10,10,10,0.95);backdrop-filter:blur(8px);flex-direction:column;padding:12px;border-radius:8px;min-width:180px}
+  nav.open .nav-links{display:flex}
+  .nav-links a{padding:10px 12px;margin:0;white-space:nowrap}
+}
